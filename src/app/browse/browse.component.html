@@ -3,6 +3,12 @@
 </ActionBar>
 
 <GridLayout class="page page-content">
-    <Label class="page-icon fa" text="&#xf1ea;"></Label>
-    <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
+    <!-- <Label class="page-icon fa" text="&#xf1ea;"></Label>
+    <Label class="page-placeholder" text=" -- Page content goes here --"></Label> -->
+    <GridLayout rows="*,*" columns="*,*">
+        <Span class="card first" text="0,0" row="0" col="0"></Span>
+        <Label class="card second" text="0,1" row="0" col="1"></Label>
+        <Label class="card third" text="1,0" row="1" col="0"></Label>
+        <Label class= "card fourth" text="1,1" row="1" col="1"></Label>
+    </GridLayout>
 </GridLayout>
