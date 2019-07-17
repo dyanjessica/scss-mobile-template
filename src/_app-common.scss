@@ -7,33 +7,9 @@
 // Common page class
 .page-content {
     
-    //Gradient box
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-  
-  .first{
-      background:url(https://picsum.photos/id/130/400/400),linear-gradient(to right, red, rgba(blue,0.6));
-  }
-  .second{
-      background:linear-gradient(to right, blue, rgba(red,0.6));
-  }
-  .third{
-      background:linear-gradient(to right, green, rgba(orange,0.6));
-  }
-  .fourth{
-      background:linear-gradient(to right, orange, rgba(green,0.6));
-  }
-  
-}
-
-    // page
     .page-placeholder {
-        color: $page-icon-color;
+        
+        color: $text-color;
         font-size: $page-content-placeholder-font-size;
         vertical-align: center;
         horizontal-align: center;
@@ -47,9 +23,36 @@
         margin-top: 20%;
     }
 
-
-//Action bar
-ActionBar .action-bar-title {
-    horizontal-align: center;
+    ActionBar .action-bar-title {
+        horizontal-align: center;
+    }   
 }
 
+    .list-group-item {
+        color: $page-icon-color;
+    }
+
+    //Gradient box
+    .first{
+        background:linear-gradient(to right, red, rgba(blue,0.6));
+    }
+    .second{
+        background:linear-gradient(to right, blue, rgba(red,0.6));
+    }
+    .third{
+        background:linear-gradient(to right, green, rgba(orange,0.6));
+    }
+    .fourth{
+        background:linear-gradient(to right, orange, rgba(green,0.6));
+    }
+
+    .cardStyle {
+        background-color: $background-light;
+        color: rgb(43, 43, 43);
+    }
+
+    .cardContent {
+        padding: 20;
+        font-weight: bold;
+        font-size: 30;
+    }
