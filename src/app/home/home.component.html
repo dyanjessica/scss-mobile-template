@@ -4,17 +4,23 @@
 
 <GridLayout class="page page-content">
     <ListView [items]="items" class="list-group">
-        <ng-template let-item="item">
-            <StackLayout class="p-20">
+        <ng-template let-item="item">                
+           <StackLayout class="p-20">
                 <Card:CardView class="cardStyle">
                     <StackLayout class="cardContent">
-                        <Label [nsRouterLink]="['../item', item.id]" [text]="item.name" class="list-group-item m-b-10"></Label>
-                        <Image [src]="item.image"></Image>
+                        <Label [nsRouterLink]="['../item', item.id]" [text]="item.name" class="m-b-10"></Label>
+                        <Image [src]="item.image" id="item-image"></Image>
+                        <Button id="button" [text]="item.name"></Button>
                     </StackLayout>
-                </Card:CardView> 
-            </StackLayout>               
+                    <StackLayout width="100%" class="lineBreak"></StackLayout>
+                    <StackLayout orientation="horizontal">
+                            <Label class="fa" text="&#xf087;"></Label><Label text="65"></Label>
+                            <Label class="fa" text="&#xf075;"></Label><Label text="18"></Label>
+                            <Label class="fa" text="&#xf004;"></Label><Label text=" Favorite "></Label>
+                            <Label class="fa" text="&#xf045;"></Label><Label text=" Share "></Label>
+                    </StackLayout>
+                </Card:CardView>
+            </StackLayout>             
         </ng-template>
     </ListView>
 </GridLayout>
-
-

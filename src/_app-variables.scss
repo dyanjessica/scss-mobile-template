@@ -3,6 +3,24 @@
 // for example '~nativescript-theme-core/scss/dark'.
 @import '~nativescript-theme-core/scss/light';
 
+//default theme:
+$default-background: #FFFFFF;
+$default-surface: #FFFFFF;
+$default-primary: #171796;
+$default-secondary: #03dac6;
+$default-onsurface: #000000;
+$default-onprimary: #FFFFFF;
+$default-error: #B00020;
+
+//dark theme
+$dark-background: #121212;
+$dark-surface: #1E1E1E;
+$dark-primary: #86bffc;
+$dark-secondary: #03dac6;
+$dark-onsurface: #E1E1E1;
+$dark-onprimary: #000000;
+$dark-error: #cf6679;
+
 // Custom colors
 $background-dark: #F8F8F8 !default;
 $background-light: #FFFFFF !default;
@@ -61,8 +79,8 @@ $side-drawer-header-brand: #737373;
 $side-drawer-background: #FFFFFF;
 
 // ActionBar
-$ab-background: $background-dark;
-$ab-color: $accent;
+$ab-background: $default-primary;
+$ab-color: $default-onprimary;
 
 // Buttons
 $btn-color-inverse: $white;
@@ -74,3 +92,6 @@ $btn-color-outline-highlighted: lighten($btn-color, 10%);
 $headings-color: $blue-dark;
 $secondary: $blue-dark;
 $text-color: $blue-dark;
+
+
+

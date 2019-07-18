@@ -2,18 +2,51 @@
     <Label class="action-bar-title" text="Search"></Label>
 </ActionBar>
 
+<GridLayout class="page page-content">
+        <ListView [items]="items" class="list-group">
+            <ng-template let-item="item">                
+               <StackLayout class="p-20">
+                    <Card:CardView class="cardStyle">
+                        <StackLayout class="cardContent">
+                            <Label [nsRouterLink]="['../item', item.id]" [text]="item.name" class="m-b-10"></Label>
+                            <Image [src]="item.image" id="item-image"></Image>
+                        </StackLayout>
+                        <StackLayout width="100%" marginTop="5" class="line"></StackLayout>
+                        <StackLayout orientation="horizontal">
+                                <Label class="fa like-icon liked-active"></Label>
+                                <Label class="layout" text="65"></Label>
+                        </StackLayout>
+                        <StackLayout col="1" orientation="horizontal"
+                        marginLeft="15">
+                        <Label class="like-icon layout fa"
+                            text="&#xf0e5;"></Label>
+                        <Label class="layout" text="18"></Label>
+                        </StackLayout>
+                        <StackLayout marginRight="15">
+                            <Label class="like-icon fa heart-active"></Label>
+                            <Label class="layout" text="Favorite"></Label>
+                        </StackLayout>
+                    <StackLayout col="3" orientation="horizontal">
+                        <Label class="like-icon layout fa"
+                            text="&#xf045;"></Label>
+                        <Label class="layout" text="Share"></Label>
+                    </StackLayout>
+                    </Card:CardView>
+                </StackLayout>             
+            </ng-template>
+        </ListView>
+        <StackLayout width="100%" class="lineBreak"></StackLayout>
+    </GridLayout>
 
 <!-- <GridLayout class="page page-content">
+        <StackLayout class="p-20">
+                <Card:CardView class="cardStyle">
+                    <StackLayout class="cardContent">
+                        <Label text="Hello" class="m-b-10"></Label>
+                        <Image src="https://placekitten.com/400/400"></Image>
+                    </StackLayout>
+                </Card:CardView>
+            </StackLayout>
     <Label class="page-icon fa" text="&#xf002;"></Label>
     <Label class="page-placeholder" text="-- Page content goes here --"></Label>
 </GridLayout> -->
-    
-    <StackLayout class="p-20">
-        <Card:CardView class="cardStyle">
-            <StackLayout class="cardContent">
-                <Label text="Hello" class="m-b-10"></Label>
-                <Image src="https://placekitten.com/400/400"></Image>
-            </StackLayout>
-        </Card:CardView>
-    </StackLayout>
-

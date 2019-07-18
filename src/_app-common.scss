@@ -6,6 +6,7 @@
 }
 // Common page class
 .page-content {
+    background: $default-background;
     
     .page-placeholder {
         
@@ -28,10 +29,6 @@
     }   
 }
 
-    .list-group-item {
-        color: $page-icon-color;
-    }
-
     //Gradient box
     .first{
         background:linear-gradient(to right, red, rgba(blue,0.6));
@@ -46,13 +43,26 @@
         background:linear-gradient(to right, orange, rgba(green,0.6));
     }
 
-    .cardStyle {
-        background-color: $background-light;
-        color: rgb(43, 43, 43);
-    }
+    // Cardview
+        .cardStyle {
+            background: $default-surface;
+            color: $default-onsurface;
+        }
+        .cardContent {
+            padding: 20;
+            font-weight: bold;
+            font-size: 14;
+        }
+        #button {
+            background: $default-primary;
+            color: $default-onprimary;
+            margin: 2;
+            border-radius: 40%;
+        }
 
-    .cardContent {
-        padding: 20;
-        font-weight: bold;
-        font-size: 30;
-    }
+        #item-image {
+            border-radius: 40%;
+        }
+
+
+        
