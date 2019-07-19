@@ -15,4 +15,9 @@
         class="tab" name="searchTab">
     </page-router-outlet>
 
+    <page-router-outlet
+        *tabItem="{title: 'Movies', iconSource: getIconSource('movie')}"
+        class="tab" name="movieTab">
+    </page-router-outlet>
+
 </TabView>

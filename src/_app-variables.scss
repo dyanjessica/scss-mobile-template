@@ -4,7 +4,7 @@
 @import '~nativescript-theme-core/scss/light';
 
 //default theme:
-$default-background: #FFFFFF;
+$default-background: #E1E1E1;
 $default-surface: #FFFFFF;
 $default-primary: #171796;
 $default-secondary: #03dac6;
@@ -79,8 +79,8 @@ $side-drawer-header-brand: #737373;
 $side-drawer-background: #FFFFFF;
 
 // ActionBar
-$ab-background: $default-primary;
-$ab-color: $default-onprimary;
+$ab-background: $default-surface;
+$ab-color: $default-onsurface;
 
 // Buttons
 $btn-color-inverse: $white;

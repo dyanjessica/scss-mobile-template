@@ -29,6 +29,11 @@
     }   
 }
 
+    .offers {
+        border-radius: 40%;
+        margin: 10;
+    }
+
     //Gradient box
     .first{
         background:linear-gradient(to right, red, rgba(blue,0.6));
@@ -54,15 +59,31 @@
             font-size: 14;
         }
         #button {
-            background: $default-primary;
-            color: $default-onprimary;
-            margin: 2;
-            border-radius: 40%;
+            background: $default-background;
+            color: $default-primary;
+            border-radius: 15%;
+            margin: 20 0 20 0;
+            border-width: .05;
+            border-color: $default-primary;
         }
 
         #item-image {
-            border-radius: 40%;
+            border-radius: 15%;
         }
 
-
+    
+    RadListView {
+        .locationCity {
+            color: White;
+            font-family: 'Nordica Plus', 'nordicaclassicltext';
+            font-weight: bold;
+            font-size: 30;
+        }
         
+        .locationCountry {
+            color: darkgray;
+            font-family: 'Nordica Plus', 'nordicaclassicltext';
+            font-size: 18;
+            text-transform: uppercase;
+        }
+    }

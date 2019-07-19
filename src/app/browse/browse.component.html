@@ -13,63 +13,32 @@
     </GridLayout>
 </GridLayout> -->
 
-<GridLayout width="100%"
-        backgroundColor="white">
-        <ListView #listview [items]="items" separatorColor="transparent">
-            <ng-template let-item="item">
-                <StackLayout class="main">
-                    <StackLayout class="content">
-                        <Image stretch="aspectFill" class="card-img"
-                            [src]="item.image"></Image>
-                        <GridLayout width="100%" columns="auto,*" rows="auto,auto"
-                            class="" verticalAlignment="center">
-                            <Label [text]="categoryIcon(item.name)" row="0"
-                                col="0" rowSpan="2" backgroundColor="#171796"
-                                class="fa category-icon"></Label>
-                            <Label row="0" col="1" class="item-name" textwrap="true"
-                                verticalAlignment="bottom"
-                                horizontalAlignment="left" [text]="item.name"></Label>
-                            <GridLayout row="1" col="1" rows="auto" columns="auto,auto,auto">
-                                <Label row="0" col="0" class="item-category"
-                                    textwrap="true" verticalAlignment="top"
-                                    horizontalAlignment="left" [text]="item.category"></Label>
-                                <Label col="1" row="0" class="fa rating-icon"
-                                    text="&#xf005;"></Label>
-                                <Label col="2" row="0" class="rating-value item-category"
-                                    text="4.5"></Label>
-                            </GridLayout>
-                        </GridLayout>
-                        <StackLayout width="100%" marginTop="5" class="line"></StackLayout>
-
-                        <GridLayout columns="auto,*,auto,auto" rows="auto">
-                            <GridLayout col="0" rows="auto" columns="auto,auto"
-                                (tap)="toggleLike(item)">
-                                <Label col="0" row="0" #like class="fa like-icon liked-active"></Label>
-                                <Label col="1" row="0" class="layout" text="65"></Label>
-                            </GridLayout>
-                            <StackLayout col="1" orientation="horizontal"
-                                marginLeft="15">
-                                <Label ref="" class="like-icon layout fa"
-                                    text="&#xf0e5;"></Label>
-                                <Label class="layout" text="18"></Label>
+<GridLayout tkExampleTitle tkToggleNavButton>
+        <RadListView [items]="locations" marginRight="-2">
+            <ListViewGridLayout tkListViewLayout scrollDirection="Vertical"
+                itemHeight="200" spanCount="1">
+            </ListViewGridLayout>
+            <ng-template tkListItemTemplate let-item="item">
+                <GridLayout backgroundColor="White">
+                    <GridLayout>
+                        <ios>
+                            <Image src="{{ item.imageSrc }}" stretch="aspectFill"></Image>
+                        </ios>
+                        <android>
+                            <Image src="{{ item.imageSrc }}" stretch="aspectFill"
+                                height="180"></Image>
+                            <!-- <FrescoDrawee horizontalAlignment="stretch" height="180"
+                                imageUri="{{ item.imageSrc }}"></FrescoDrawee> -->
+                        </android>
+                        <GridLayout verticalAlignment="bottom">
+                            <StackLayout paddingTop="8" paddingBottom="8"
+                                paddingLeft="16" paddingRight="16">
+                                <Label text="{{ item.city }}" class="locationCity"></Label>
+                                <Label text="{{ item.country }}" class="locationCountry"></Label>
                             </StackLayout>
-                            <GridLayout col="2" rows="auto" columns="auto,auto"
-                                marginRight="15">
-                                <Label col="0" row="0" #favorite class="like-icon fa heart-active"></Label>
-                                <Label col="1" row="0" class="layout" text="Favorite"></Label>
-                            </GridLayout>
-                            <StackLayout col="3" orientation="horizontal">
-                                <Label ref="" class="like-icon layout fa"
-                                    text="&#xf045;"></Label>
-                                <Label class="layout" text="Share"></Label>
-                            </StackLayout>
-
                         </GridLayout>
-                    </StackLayout>
-
-                    <StackLayout width="100%" class="lineBreak"></StackLayout>
-
-                </StackLayout>
+                    </GridLayout>
+                </GridLayout>
             </ng-template>
-        </ListView>
+        </RadListView>
     </GridLayout>
