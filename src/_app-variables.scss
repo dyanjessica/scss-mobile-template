@@ -3,13 +3,19 @@
 // for example '~nativescript-theme-core/scss/dark'.
 @import '~nativescript-theme-core/scss/light';
 
+$font: 'CircularStd';
+
+$light-primary: #571DE5;
+
 //default theme:
 $default-background: #E1E1E1;
-$default-surface: #FFFFFF;
-$default-primary: #171796;
-$default-secondary: #03dac6;
+$default-surface: #f0f0f0;
+$default-primary: #571DE5;
+$default-variant: #4646A2;
+$default-secondary: #FE4976;
 $default-onsurface: #000000;
 $default-onprimary: #FFFFFF;
+$default-neutral: #565656;
 $default-error: #B00020;
 
 //dark theme

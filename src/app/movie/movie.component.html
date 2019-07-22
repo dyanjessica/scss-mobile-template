@@ -3,7 +3,7 @@
     </ActionBar>
 
     
-<GridLayout class="page page-content">
+<!-- <GridLayout class="page page-content">
         <StackLayout class="p-20">
                 <Card:CardView class="cardStyle">
                     <StackLayout class="cardContent">
@@ -14,28 +14,13 @@
             </StackLayout>
     <Label class="page-icon fa" text="&#xf002;"></Label>
     <Label class="page-placeholder" text="-- Page content goes here --"></Label>
+</GridLayout> -->
+<GridLayout rows="*, *" columns="*, *, *">
+    <Image src="https://placekitten.com/400/400" stretch="aspectFill" colSpan="3" row="0" horizontalAlignment="center" ></Image>
+    <StackLayout orientation="vertical" row="0" marginLeft="15">
+        <Label text="Hello there" class="info" textWrap="true" row="0" col="0" colSpan="1" horizontalAlignment="center" id="image-text"></Label>
+        <Button class="btn" id="know-more" id="button" text="Know more"></Button>    
+    </StackLayout>
 </GridLayout>
-
-<!-- <GridLayout class="page page-content">
-        <ListView [items]="items" class="list-group">
-            <ng-template let-item="item">
-                    <StackLayout class="p-20">
-                    <GridLayout backgroundColor="White">
-                            <GridLayout id="image1">
-                                    <Image [nsRouterLink]="['../item', item.id]" [src]="item.image" id="item-image"></Image>
-                                <GridLayout verticalAlignment="bottom">
-                                    <StackLayout paddingTop="8" paddingBottom="8"
-                                        paddingLeft="16" paddingRight="16">
-                                        <Label [text]="item.name" class="locationCity"></Label>
-                                        <Label [text]="item.description" class="locationCountry"></Label>
-                                    </StackLayout>
-                                </GridLayout>
-                            </GridLayout>
-                        </GridLayout>
-                        </StackLayout>
-                    </ng-template>            
-        </ListView>
-    </GridLayout> -->
-
 
     

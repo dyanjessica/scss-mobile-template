@@ -3,8 +3,6 @@ import { Routes } from "@angular/router";
 import { NSEmptyOutletComponent } from "nativescript-angular";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 
-import { DetailComponent } from "./detail/detail.component";
-
 
 const routes: Routes = [
     {
@@ -37,7 +35,7 @@ const routes: Routes = [
         loadChildren: "~/app/movie/movie.module#MovieModule",
         outlet: "movieTab"
     },
-    { path: "detail/:id", component: DetailComponent }
+
 
 ];
     

@@ -1,15 +1,24 @@
 // Place any CSS rules you want to apply on both iOS and Android here.
 // This is where the vast majority of your CSS code goes.
 // Font icon class
+
+
 .fa {
-   font-family: "FontAwesome";
-}
+        font-family: "FontAwesome";
+    }
+
+    
 // Common page class
 .page-content {
     background: $default-background;
+    font-family: 'CircularStd';
+    font-weight: 400;
     
+    .fa {
+        font-family: "FontAwesome";
+     }
+
     .page-placeholder {
-        
         color: $text-color;
         font-size: $page-content-placeholder-font-size;
         vertical-align: center;
@@ -24,14 +33,38 @@
         margin-top: 20%;
     }
 
+    Label {
+        font-family: $font;
+    }
+
     ActionBar .action-bar-title {
         horizontal-align: center;
-    }   
+    }  
+    
 }
-
-    .offers {
+    .btn {
         border-radius: 40%;
         margin: 10;
+        font-size: 12;
+    }
+
+    .primary {
+        background-color: $default-primary;
+        color: $default-onprimary;
+    }
+
+    .offers {
+        background: $default-surface;
+        border-radius: 40%;
+        margin: 10;
+        font-size: 12;
+    }
+    
+    #image-text {
+        color: #ffffff;
+        font-size: 28;
+        font-weight: 600;
+        
     }
 
     //Gradient box
@@ -50,16 +83,16 @@
 
     // Cardview
         .cardStyle {
-            background: $default-surface;
+            background: $default-background;
             color: $default-onsurface;
         }
         .cardContent {
-            padding: 20;
+            padding: 10;
             font-weight: bold;
             font-size: 14;
         }
         #button {
-            background: $default-background;
+            background: $default-surface;
             color: $default-primary;
             border-radius: 15%;
             margin: 20 0 20 0;
@@ -87,3 +120,27 @@
             text-transform: uppercase;
         }
     }
+    
+    #carousel{
+        .scroll-menu {
+            height: 220;
+            padding: 10;
+        }
+         
+        .scroll-pane {
+            background-color: #FF4081;
+            width: 240;
+            height: 220;
+            margin: 10;
+        }
+         
+        Button {
+            height: 40;
+            horizontal-align: right;
+        }
+         
+        Label {
+            color: #fff;
+            horizontal-align: center;
+        }
+    }    

@@ -5,9 +5,6 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
-import { SearchComponent } from "./search/search.component";
-import { DetailComponent } from "./detail/detail.component";
-
 import { DataService } from "./data/data";
 
 
@@ -20,9 +17,7 @@ import { DataService } from "./data/data";
         AppRoutingModule,
     ],
     declarations: [
-        AppComponent,
-        SearchComponent,
-        DetailComponent
+        AppComponent
     
     ],
     providers: [
