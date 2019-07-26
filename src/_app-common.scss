@@ -1,6 +1,8 @@
 // Place any CSS rules you want to apply on both iOS and Android here.
 // This is where the vast majority of your CSS code goes.
 // Font icon class
+@import '~nativescript-theme-core/scss/light';
+
 
 
 .fa {
@@ -67,20 +69,6 @@
         
     }
 
-    //Gradient box
-    .first{
-        background:linear-gradient(to right, red, rgba(blue,0.6));
-    }
-    .second{
-        background:linear-gradient(to right, blue, rgba(red,0.6));
-    }
-    .third{
-        background:linear-gradient(to right, green, rgba(orange,0.6));
-    }
-    .fourth{
-        background:linear-gradient(to right, orange, rgba(green,0.6));
-    }
-
     // Cardview
         .cardStyle {
             background: $default-background;
@@ -95,7 +83,6 @@
             background: $default-surface;
             color: $default-primary;
             border-radius: 15%;
-            margin: 20 0 20 0;
             border-width: .05;
             border-color: $default-primary;
         }
@@ -120,6 +107,12 @@
             text-transform: uppercase;
         }
     }
+
+    .shops {
+        font-weight: bold;
+        font-size: 25;
+        color: $default-primary;
+    }
     
     #carousel{
         .scroll-menu {
@@ -128,17 +121,15 @@
         }
          
         .scroll-pane {
-            background-color: #FF4081;
+            background: url("https://placekitten.com/200/200");
+            background-repeat: no-repeat;
+            background-size: cover;
             width: 240;
             height: 220;
             margin: 10;
+            border-radius: 40%;
         }
-         
-        Button {
-            height: 40;
-            horizontal-align: right;
-        }
-         
+
         Label {
             color: #fff;
             horizontal-align: center;

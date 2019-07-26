@@ -10,7 +10,7 @@
 </GridLayout> -->
 
 <GridLayout class="page page-content">
-    <GridLayout rows="60,*,*,*">
+    <GridLayout rows="60,*">
         <StackLayout row="0" rowSpan="1" orientation="horizontal" horizontalAlignment="center" marginTop="5">
             <Button class="btn primary" text="Offers"></Button>
             <Button class="btn offers" text="Events"></Button>
@@ -32,6 +32,7 @@
                                             <Button [text]="item.description" left="135" top="200" height="40" width="170" backgroundColor="rgba(224, 236, 255, 0.5)"></Button>
                                         </AbsoluteLayout>
                                 </GridLayout>
+                                <Button row="1" [nsRouterLink]="['../item', item.id]" class="m-t-20" id="button" text="View Details"></Button>
                             <!-- <StackLayout width="100%" class="lineBreak"></StackLayout> -->
                             <!-- <StackLayout orientation="horizontal" horizontalAlignment="center">
                                 <Label class="fa" text=" &#xf087; "></Label><Label text=" 65 "></Label>
@@ -39,33 +40,11 @@
                                 <Label class="fa" text=" &#xf004; "></Label><Label text=" Favorite "></Label>
                                 <Label class="fa" text=" &#xf045; "></Label><Label text=" Share "></Label>
                             </StackLayout> -->
-                        </StackLayout>
+                        </StackLayout>     
                     </Card:CardView>
                 </StackLayout>           
             </ng-template>
         </ListView>
-        <Button row="2" [nsRouterLink]="['../item', item.id]" id="button" text="View Details"></Button>
-        <StackLayout row="3" id="carousel">
-                <ScrollView orientation="horizontal">
-                    <StackLayout orientation="horizontal" class="scroll-menu">
-                        <StackLayout class="scroll-pane">
-                            <Label text="Your cool Slide"></Label>                    
-                        </StackLayout>
-                        <StackLayout class="scroll-pane">
-                                <Image src="https://placekitten.com/400/400" id="item-image" height="40"></Image>                  
-                        </StackLayout>
-                        <StackLayout class="scroll-pane">      
-                                <Image src="https://picsum.photos/id/333/400/400" id="item-image" height="40"></Image>                  
-                        </StackLayout>
-                        <StackLayout class="scroll-pane">
-                                <Image src="https://picsum.photos/id/222/400/400" id="item-image" height="40"></Image>                  
-                        </StackLayout>
-                        <StackLayout class="scroll-pane">
-                            <Button text="Button"></Button>                  
-                        </StackLayout>
-                    </StackLayout>
-                </ScrollView>
-            </StackLayout>
     </GridLayout>
 </GridLayout>
 
@@ -73,3 +52,25 @@
 
 
 
+<!-- <Button row="2" [nsRouterLink]="['../item', item.id]" id="button" text="View Details"></Button>
+        <StackLayout row="3" id="carousel">
+                <ScrollView orientation="horizontal">
+                    <StackLayout orientation="horizontal" class="scroll-menu">
+                        <StackLayout class="scroll-pane">
+                            <Button text="Button"></Button>                   
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">
+                            <Button text="Button"></Button>
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">      
+                            <Button text="Button"></Button>
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">
+                            <Button text="Button"></Button>
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">
+                            <Button text="Button"></Button>                  
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout> -->

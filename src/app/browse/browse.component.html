@@ -1,17 +1,11 @@
 <ActionBar class="action-bar">
-    <Label class="action-bar-title" text="Browse"></Label>
+    <AbsoluteLayout>
+        <Label class="action-bar-title" text="All Malls" left="5" top="5"></Label>
+        <Label class="fa" text="&#xf002;" left="250" top="5"></Label>
+        <Label class="fa" text="&#xf0a2;" left="270" top="5"></Label>
+        <Label class="fa" text="&#xf0ca;" left="290" top="5"></Label>
+</AbsoluteLayout>
 </ActionBar>
-<!-- 
-<GridLayout class="page page-content">
-    <Label class="page-icon fa" text="&#xf1ea;"></Label>
-    <Label class="page-placeholder" text=" -- Page content goes here --"></Label>
-    <GridLayout rows="*,*" columns="*,*">
-        <Label class="card first" text="0,0" row="0" col="0"></Label>
-        <Label class="card second" text="0,1" row="0" col="1"></Label>
-        <Label class="card third" text="1,0" row="1" col="0"></Label>
-        <Label class= "card fourth" text="1,1" row="1" col="1"></Label>
-    </GridLayout>
-</GridLayout> -->
 
 <GridLayout tkExampleTitle tkToggleNavButton>
         <RadListView [items]="locations" marginRight="-2">

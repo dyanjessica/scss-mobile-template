@@ -1,34 +1,37 @@
 <ActionBar class="action-bar">
     <AbsoluteLayout>
-            <Label class="action-bar-title" text="All Malls" left="5" top="5"></Label>
+            <Label class="action-bar-title" text="Shops" left="5" top="5"></Label>
             <Label class="fa" text="&#xf002;" left="250" top="5"></Label>
             <Label class="fa" text="&#xf0a2;" left="270" top="5"></Label>
             <Label class="fa" text="&#xf0ca;" left="290" top="5"></Label>
     </AbsoluteLayout>
 </ActionBar>
 
-<GridLayout>
-
+<GridLayout rows="5*, 40*,40*, 10*" class="m-10">
+        <Label row="0" text="Featured Shops" class="shops"></Label>
+        <StackLayout row="1" id="carousel">
+                <Label text="Featured Shops"></Label>
+                <ScrollView orientation="horizontal">
+                    <StackLayout orientation="horizontal" class="scroll-menu">
+                        <StackLayout class="scroll-pane"></StackLayout>
+                        <StackLayout class="scroll-pane"></StackLayout>
+                        <StackLayout class="scroll-pane"></StackLayout>
+                        <StackLayout class="scroll-pane"></StackLayout>
+                        <StackLayout class="scroll-pane"></StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <StackLayout row="2" id="carousel">
+                <ScrollView orientation="horizontal">
+                    <StackLayout orientation="horizontal" class="scroll-menu">
+                        <StackLayout class="scroll-pane"></StackLayout>
+                        <StackLayout class="scroll-pane"></StackLayout>
+                        <StackLayout class="scroll-pane"></StackLayout>
+                        <StackLayout class="scroll-pane"></StackLayout>
+                        <StackLayout class="scroll-pane"></StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <Button row="3" [nsRouterLink]="['../item', item.id]" class="m-r-20 m-l-20" id="button" text="View Details"></Button>
 </GridLayout>
 
-<StackLayout id="carousel">
-    <ScrollView orientation="horizontal">
-        <StackLayout orientation="horizontal" class="scroll-menu">
-            <StackLayout class="scroll-pane">
-                <Label text="Your cool Slide"></Label>                    
-            </StackLayout>
-            <StackLayout class="scroll-pane">
-                <Button text="Button"></Button>                  
-            </StackLayout>
-            <StackLayout class="scroll-pane">
-                <Button text="Button"></Button>                  
-            </StackLayout>
-            <StackLayout class="scroll-pane">
-                <Button text="Button"></Button>                  
-            </StackLayout>
-            <StackLayout class="scroll-pane">
-                <Button text="Button"></Button>                  
-            </StackLayout>
-        </StackLayout>
-    </ScrollView>
-</StackLayout>
