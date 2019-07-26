@@ -13,25 +13,46 @@
                 <Label text="Featured Shops"></Label>
                 <ScrollView orientation="horizontal">
                     <StackLayout orientation="horizontal" class="scroll-menu">
-                        <StackLayout class="scroll-pane"></StackLayout>
-                        <StackLayout class="scroll-pane"></StackLayout>
-                        <StackLayout class="scroll-pane"></StackLayout>
-                        <StackLayout class="scroll-pane"></StackLayout>
-                        <StackLayout class="scroll-pane"></StackLayout>
+                        <StackLayout class="scroll-pane">
+                            <Label text="Restaurants"></Label>
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">
+                            <Label text="Stores"></Label>
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">
+                                <Label text="Services"></Label>
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">
+                                <Label text="Entertainment"></Label>
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">
+                                <Label text="Leisure"></Label>
+                        </StackLayout>
                     </StackLayout>
                 </ScrollView>
-            </StackLayout>
-            <StackLayout row="2" id="carousel">
+        </StackLayout>
+        <StackLayout row="2" id="carousel">
+                <Label text="Featured Shops"></Label>
                 <ScrollView orientation="horizontal">
                     <StackLayout orientation="horizontal" class="scroll-menu">
-                        <StackLayout class="scroll-pane"></StackLayout>
-                        <StackLayout class="scroll-pane"></StackLayout>
-                        <StackLayout class="scroll-pane"></StackLayout>
-                        <StackLayout class="scroll-pane"></StackLayout>
-                        <StackLayout class="scroll-pane"></StackLayout>
+                        <StackLayout class="scroll-pane">
+                            <Label text="Gong Cha"></Label>
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">
+                            <Label text="Watsons"></Label>
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">
+                                <Label text="The Face Shop"></Label>
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">
+                                <Label text="Nike"></Label>
+                        </StackLayout>
+                        <StackLayout class="scroll-pane">
+                                <Label text="Paws"></Label>
+                        </StackLayout>
                     </StackLayout>
                 </ScrollView>
-            </StackLayout>
-            <Button row="3" [nsRouterLink]="['../item', item.id]" class="m-r-20 m-l-20" id="button" text="View Details"></Button>
+        </StackLayout>
+        <Button row="3" [nsRouterLink]="['../item', item.id]" class="m-r-20 m-l-20" id="button" text="View Details"></Button>
 </GridLayout>
 
